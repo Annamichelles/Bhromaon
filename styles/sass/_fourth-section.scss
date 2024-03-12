@@ -1,0 +1,33 @@
+.fourth-section {
+	 position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.cliff {
+	position: relative;
+	width: 100%;
+	z-index: -1;
+}
+
+.container__two {
+	background: rgb(35, 35, 35, 0.8);
+	position: absolute;
+	width: 490px;
+	height: 334px;
+	display: flex;
+	padding: 30px;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.third-title {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+}
+
