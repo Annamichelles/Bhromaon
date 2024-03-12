@@ -39,3 +39,18 @@
 .fa-check {
 	color: #FF6363;
 }
+
+
+@media screen and (max-width: 500px) {
+
+	.heading-text {
+		text-align: left;
+		font-family: 'Aleo', sans-serif;
+		color: #FFFFFF;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 300;
+		width: 100%;
+		max-width: 560px;
+	}
+}

@@ -1,7 +1,7 @@
 .fourth-section {
 	 position: relative;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -11,9 +11,8 @@
 	z-index: -1;
 }
 
-.container__two {
+.container__right {
 	background: rgb(35, 35, 35, 0.8);
-	position: absolute;
 	width: 490px;
 	height: 334px;
 	display: flex;
@@ -25,9 +24,72 @@
 
 .third-title {
 	font-family: 'Josefin Sans', sans-serif;
-	color: #FFFFFF;
+	color: $main-txt-color;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 300;
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.third-section {
+		height: 496px;
+		display: flex;
+		justify-content: center;
+		align-items: normal;
+	}
+	.hidden-container {
+		display: none;
+	}
+
+	.containers {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+
+	.container__right {
+		background: rgb(35, 35, 35, 0.8);
+		width: 100%;
+		display: flex;
+		padding: 30px;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.cliff {
+		width: 100%;
+		max-width: 1770px;
+
+	}
+
+	.btn__main {
+		text-align: center;
+		font-family: 'Aleo', sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.32px;
+		width: 100px;
+		height: 43px;
+		border-radius: 0px;
+		border: solid 1px white;
+		cursor: pointer;
+		background: $secondary-color;
+		color: #FFFFFF;
+		border: none;
+		box-shadow: none;
+		margin-top: 45px;
+		&:hover {
+			border-bottom: solid 1px $main-txt-color;
+		}
+	}
+
+	.btn__main:hover {
+ 		border: 1px solid $main-txt-color;
+	}
+
 }
 

@@ -1,4 +1,7 @@
-/*tags*/
+
+
+$main-txt-color: #FFFFFF;
+$secondary-color: #5574FA;
 
 
 body {
@@ -13,8 +16,7 @@ body {
 	overflow-x: hidden;
 }
 
-
-/*classes*/
+/*imports*/
 
 @import 'header';
 @import 'info';

@@ -49,18 +49,18 @@
 	border-radius: 0px;
 	border: solid 1px white;
 	cursor: pointer;
-	background: #5474FD;
+	background: $secondary-color;
 	color: #FFFFFF;
 	border: none;
 	box-shadow: none;
 	margin-top: 45px;
 	&:hover {
-		border-bottom: solid 1px #FFFFFF;
+		border-bottom: solid 1px $main-txt-color;
 	}
 }
 
 .btn__getstarted:hover {
- 	border: 1px solid #FFFFFF;
+ 	border: 1px solid $main-txt-color;
 }
 
 .btn-link {
@@ -69,6 +69,23 @@
     align-items: center;
 }
 
-.mountain-s {
-	left: 40px;
+
+.house-s {
+	align-self: center;
+}
+
+@media screen and (max-width: 500px) {
+
+	.info-left {
+		width: 100%;
+		max-width: 300px;
+		margin-top: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.info__right {
+		display: none;
+	}	
 }

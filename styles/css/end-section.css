@@ -1,59 +1,17 @@
-.hiker-l {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 60 |     color: $secondary-color;
+ *    |            ^^^^^^^^^^^^^^^^
+ *    '
+ *   sass/end-section.scss 60:9  root stylesheet */
 
-.end-section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 60 \2502      color: $secondary-color;\a    \2502             ^^^^^^^^^^^^^^^^\a    \2575 \a   sass/end-section.scss 60:9  root stylesheet";
 }
-
-.end-container {
-  display: flex;
-  background: #333333;
-  max-width: 1110px;
-  width: 100%;
-  height: 287px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  position: absolute;
-}
-
-.hiker {
-  max-width: 445px;
-  width: 100%;
-}
-
-.container__four {
-  background: #333333;
-  max-width: 668px;
-  width: 100%;
-  display: flex;
-  padding: 30px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.third-title {
-  font-family: "Josefin Sans", sans-serif;
-  color: #FFFFFF;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-}
-
-.quote {
-  display: flex;
-}
-
-.fa-quote-left {
-  color: #5474FD;
-}
-
-/*# sourceMappingURL=end-section.css.map */
