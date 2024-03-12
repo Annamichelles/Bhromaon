@@ -1,0 +1,18 @@
+/*tags*/
+
+
+body {
+	background: #FFFFFF;
+	border: none;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/*classes*/
+
+@import 'header';
+@import 'info'
