@@ -1,0 +1,121 @@
+/*fonts*/
+
+
+.main-title {
+	color: #FFFFFF;
+	font-family: 'Josefin sans', sans-serif;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.heading-text {
+		text-align: left;
+		font-family: 'Aleo', sans-serif;
+		color: #FFFFFF;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 300;
+		width: 100%;
+		max-width: 560px;
+		&__footer {
+			text-align: center;
+			font-family: 'Aleo', sans-serif;
+			color: #FFFFFF;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 300;
+		}
+	
+}
+
+.footer-text {
+		max-width: 350px;
+		width: 100%;
+		color: #2F281E;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 28px; /* 150% */
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+
+.navbar__title {
+    	cursor: pointer;
+    	color: #FFFFFF;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 28px; /* 150% */
+}
+
+.second-title {
+	color: #FFFFFF;
+	font-family: 'Josefin sans', sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 28px;
+}
+
+.third-title {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.text-area {
+	width: 100%;
+	max-width: 503px;
+	height: 61px;
+	border: none;
+	text-align: center;
+	font-family: 'Aleo', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 28;
+	letter-spacing: 2.8px;
+}
+
+.scroll {
+	 font-family: 'Josefin Sans', sans-serif;
+	 color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 2.8px;
+}
+
+
+.quote-text {
+	text-align: left;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	width: 100%;
+	max-width: 560px;
+	margin-left: 10px;
+}
+
+.bread-text {
+		text-align: left;
+		font-family: 'Josefin Sans', sans-serif;
+		color: #FFFFFF;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		width: 100%;
+		max-width: 560px;
+	}
+
+

@@ -9,38 +9,11 @@
   box-sizing: border-box;
   background-color: #232323;
 }
-.footer__logo {
-  cursor: pointer;
-}
-.footer__end {
-  display: flex;
-  align-items: center;
-}
-.footer__menu {
-  max-width: 350px;
-  width: 100%;
-  color: #2F281E;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px; /* 150% */
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-}
-.footer__menu li {
-  display: inline-block;
-}
-.footer__menu a {
-  color: #2F281E;
-  text-decoration: none;
-}
 
 .fa-facebook-f, .fa-twitter, .fa-youtube, .fa-pinterest {
   color: #FFFFFF;
   margin: 5px;
+  margin-bottom: 50px;
 }
 .fa-facebook-f:hover, .fa-twitter:hover, .fa-youtube:hover, .fa-pinterest:hover {
   cursor: pointer;

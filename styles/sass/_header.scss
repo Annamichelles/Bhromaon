@@ -39,24 +39,6 @@
 	z-index: -1;
 }
 
-.main-title {
-	color: #FFFFFF;
-	font-family: 'Josefin sans', sans-serif;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 28px;
-}
-
-.second-title {
-	color: #FFFFFF;
-	font-family: 'Josefin sans', sans-serif;
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 28px;
-}
-
 .search-field {
 	width: 100%;
 	max-width: 653px;
@@ -66,21 +48,7 @@
 	margin-top: 48px;
 }
 
-.text-area {
-	width: 100%;
-	max-width: 503px;
-	height: 61px;
-	border: none;
-	text-align: center;
-	font-family: 'Aleo', sans-serif;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 28;
-	letter-spacing: 2.8px;
-}
-
-
-.submit-button {
+.search-button {
 	text-align: center;
 	font-family: 'Aleo', sans-serif;
 	font-size: 14px;
@@ -90,21 +58,17 @@
 	height: 63px;
 	border-radius: 0px;
 	border: solid 1px white;
-	cursor: pointer;
 	background: #5474FD;
 	color: #FFFFFF;
 	border: none;
 	box-shadow: none;
+	&:hover {
+		border-bottom: solid 5px #5474FD;
+		cursor: pointer;
+	}
 }
 
 
-.scroll {
-	 font-family: 'Josefin Sans', sans-serif;
-	 color: #FFFFFF;
-	font-size: 14px;
-	font-weight: 300;
-	letter-spacing: 2.8px;
-}
 
 .fa-chevron-down {
 	color: #FFFFFF;
@@ -124,15 +88,6 @@
 
   }
 
-.navbar__title {
-    	cursor: pointer;
-    	color: #FFFFFF;
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 24px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 28px; /* 150% */
-}
    
 
  .navbar__menu {
@@ -162,21 +117,16 @@
 .who, .what, .travel {
 	margin-right: 20px;
 	&:hover {
-		color: #5474FD;
+		border-bottom: solid 1px #FFFFFF;
 	}
 }
 
 .contact {
 	&:hover {
-		color: #5474FD;
+		border-bottom: solid 1px #FFFFFF;
 	}
+
 }
-
-
-
-
-
-
 
 
 

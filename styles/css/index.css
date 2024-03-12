@@ -7,6 +7,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /*classes*/
@@ -44,24 +46,6 @@ body {
   z-index: -1;
 }
 
-.main-title {
-  color: #FFFFFF;
-  font-family: "Josefin sans", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
-}
-
-.second-title {
-  color: #FFFFFF;
-  font-family: "Josefin sans", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 28px;
-}
-
 .search-field {
   width: 100%;
   max-width: 653px;
@@ -71,20 +55,7 @@ body {
   margin-top: 48px;
 }
 
-.text-area {
-  width: 100%;
-  max-width: 503px;
-  height: 61px;
-  border: none;
-  text-align: center;
-  font-family: "Aleo", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 28;
-  letter-spacing: 2.8px;
-}
-
-.submit-button {
+.search-button {
   text-align: center;
   font-family: "Aleo", sans-serif;
   font-size: 14px;
@@ -94,19 +65,14 @@ body {
   height: 63px;
   border-radius: 0px;
   border: solid 1px white;
-  cursor: pointer;
   background: #5474FD;
   color: #FFFFFF;
   border: none;
   box-shadow: none;
 }
-
-.scroll {
-  font-family: "Josefin Sans", sans-serif;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 2.8px;
+.search-button:hover {
+  border-bottom: solid 5px #5474FD;
+  cursor: pointer;
 }
 
 .fa-chevron-down {
@@ -124,16 +90,6 @@ body {
   box-sizing: border-box;
   margin-bottom: auto;
   background-color: #5474FD;
-}
-
-.navbar__title {
-  cursor: pointer;
-  color: #FFFFFF;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px; /* 150% */
 }
 
 .navbar__menu {
@@ -162,11 +118,11 @@ body {
   margin-right: 20px;
 }
 .who:hover, .what:hover, .travel:hover {
-  color: #5474FD;
+  border-bottom: solid 1px #FFFFFF;
 }
 
 .contact:hover {
-  color: #5474FD;
+  border-bottom: solid 1px #FFFFFF;
 }
 
 /*fixa foton*/
@@ -193,26 +149,6 @@ body {
   max-width: 560px;
   margin-top: 45px;
 }
-.info-left__main-title {
-  text-align: left;
-  font-family: "Aleo", sans-serif;
-  color: #FFFFFF;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 300;
-  width: 100%;
-  max-width: 560px;
-}
-.info-left__text {
-  text-align: left;
-  font-family: "Josefin Sans", sans-serif;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  width: 100%;
-  max-width: 560px;
-}
 
 .info__right {
   width: 605px;
@@ -228,7 +164,7 @@ body {
   position: absolute;
 }
 
-.btn__getstarted {
+.btn__main {
   text-align: center;
   font-family: "Aleo", sans-serif;
   font-size: 14px;
@@ -244,6 +180,9 @@ body {
   border: none;
   box-shadow: none;
   margin-top: 45px;
+}
+.btn__main:hover {
+  border-bottom: solid 1px #FFFFFF;
 }
 
 .btn__getstarted:hover {
@@ -364,13 +303,18 @@ body {
   font-weight: 300;
 }
 
-.end-section {
-  width: 100%;
-  height: 700px;
+.hiker-l {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  z-index: -1;
+}
+
+.end-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .end-container {
@@ -382,6 +326,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  position: absolute;
 }
 
 .hiker {
@@ -416,18 +361,6 @@ body {
   color: #5474FD;
 }
 
-.quote-text {
-  text-align: left;
-  font-family: "Josefin Sans", sans-serif;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  width: 100%;
-  max-width: 560px;
-  margin-left: 10px;
-}
-
 .footer {
   width: 100%;
   height: 271px;
@@ -439,14 +372,55 @@ body {
   box-sizing: border-box;
   background-color: #232323;
 }
-.footer__logo {
+
+.fa-facebook-f, .fa-twitter, .fa-youtube, .fa-pinterest {
+  color: #FFFFFF;
+  margin: 5px;
+  margin-bottom: 50px;
+}
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-youtube:hover, .fa-pinterest:hover {
   cursor: pointer;
+  scale: 1.5;
 }
-.footer__end {
-  display: flex;
-  align-items: center;
+
+.fa-linkedin-in {
+  color: #5474FD;
 }
-.footer__menu {
+.fa-linkedin-in:hover {
+  cursor: pointer;
+  scale: 1.5;
+}
+
+/*fonts*/
+.main-title {
+  color: #FFFFFF;
+  font-family: "Josefin sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.heading-text {
+  text-align: left;
+  font-family: "Aleo", sans-serif;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  width: 100%;
+  max-width: 560px;
+}
+.heading-text__footer {
+  text-align: center;
+  font-family: "Aleo", sans-serif;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.footer-text {
   max-width: 350px;
   width: 100%;
   color: #2F281E;
@@ -460,29 +434,76 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-.footer__menu li {
-  display: inline-block;
-}
-.footer__menu a {
-  color: #2F281E;
-  text-decoration: none;
-}
 
-.fa-facebook-f, .fa-twitter, .fa-youtube, .fa-pinterest {
+.navbar__title {
+  cursor: pointer;
   color: #FFFFFF;
-  margin: 5px;
-}
-.fa-facebook-f:hover, .fa-twitter:hover, .fa-youtube:hover, .fa-pinterest:hover {
-  cursor: pointer;
-  scale: 1.5;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 150% */
 }
 
-.fa-linkedin-in {
-  color: #5474FD;
+.second-title {
+  color: #FFFFFF;
+  font-family: "Josefin sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
 }
-.fa-linkedin-in:hover {
-  cursor: pointer;
-  scale: 1.5;
+
+.third-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.text-area {
+  width: 100%;
+  max-width: 503px;
+  height: 61px;
+  border: none;
+  text-align: center;
+  font-family: "Aleo", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28;
+  letter-spacing: 2.8px;
+}
+
+.scroll {
+  font-family: "Josefin Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2.8px;
+}
+
+.quote-text {
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  width: 100%;
+  max-width: 560px;
+  margin-left: 10px;
+}
+
+.bread-text {
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  width: 100%;
+  max-width: 560px;
 }
 
 /*# sourceMappingURL=index.css.map */
